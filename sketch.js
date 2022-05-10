@@ -7,8 +7,12 @@ function setup() {
 }
 
 function draw() {
-  
+  textSize(30)
+  text("Honda Civic", 100,300)
+  fill(255, 0, 0)
+}
 
+function draw() {
   const percent = float(counter % totalFrames) / totalFrames;
   render(percent);
   counter++;
@@ -20,6 +24,7 @@ function render(percent) {
   stroke(255, 0, 100);
   strokeWeight(5);
   fill(255, 199, 44);
+  
   
   beginShape();
   for (let v of square) {
@@ -39,4 +44,4 @@ function render(percent) {
     square.splice(0, 1);
   }
 
-}
+}   
