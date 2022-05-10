@@ -18,13 +18,13 @@ function render(percent) {
   background(0);
   translate(width / 2, height / 2);
   stroke(255, 0, 100);
-  strokeWeight(4);
+  strokeWeight(5);
   fill(255, 199, 44);
   
   beginShape();
   for (let v of square) {
-    const a = map(percent, 0, 1, 0, TWO_PI * 0);
-    const r = map(sin(a), -1, 1, height / 80, height / 40);
+    const a = map(percent, 0, 1, 1, TWO_PI * 0);
+    const r = map(sin(a), -1, 4, height / 80, height / 40);
     vertex(r * v.x, r * v.y);
     
   }
