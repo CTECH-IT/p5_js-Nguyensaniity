@@ -6,16 +6,15 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
 }
 
-function draw() {
-  textSize(30)
-  text("Honda Civic", 100,300)
-  fill(255, 0, 0)
-}
+
 
 function draw() {
   const percent = float(counter % totalFrames) / totalFrames;
   render(percent);
   counter++;
+    textSize(40)
+    text("Honda Civic", 50,50)
+    fill(255, 0, 0)
 }
 
 function render(percent) {
